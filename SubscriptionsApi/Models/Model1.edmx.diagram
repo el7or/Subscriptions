@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="20267c5848774b7ab2324917ce081912" Name="Diagram1" ZoomLevel="85">
+        <EntityTypeShape EntityType="Model.Branch" Width="1.5" PointX="5.25" PointY="16.625" />
+        <EntityTypeShape EntityType="Model.BranchPolicy" Width="1.5" PointX="7.5" PointY="19.5" />
+        <EntityTypeShape EntityType="Model.City" Width="1.5" PointX="5.25" PointY="12.875" />
+        <EntityTypeShape EntityType="Model.Company" Width="1.5" PointX="3" PointY="16" />
+        <EntityTypeShape EntityType="Model.CompanyModule" Width="1.5" PointX="14.5" PointY="19" />
+        <EntityTypeShape EntityType="Model.CompanyPreference" Width="1.5" PointX="5.25" PointY="25.375" />
+        <EntityTypeShape EntityType="Model.Country" Width="1.5" PointX="0.75" PointY="12.875" />
+        <EntityTypeShape EntityType="Model.Currency" Width="1.5" PointX="12.75" PointY="25.875" />
+        <EntityTypeShape EntityType="Model.Division" Width="1.5" PointX="8.25" PointY="4.5" />
+        <EntityTypeShape EntityType="Model.GenderLookup" Width="1.5" PointX="5.25" PointY="22.375" />
+        <EntityTypeShape EntityType="Model.Industry" Width="1.5" PointX="0.75" PointY="18" />
+        <EntityTypeShape EntityType="Model.InvoiceItem" Width="1.5" PointX="12" PointY="18.625" />
+        <EntityTypeShape EntityType="Model.Invoice" Width="1.5" PointX="9.75" PointY="18.125" />
+        <EntityTypeShape EntityType="Model.Item" Width="1.5" PointX="9.75" PointY="23.875" />
+        <EntityTypeShape EntityType="Model.Language" Width="1.5" PointX="12.75" PointY="7.625" />
+        <EntityTypeShape EntityType="Model.Logging" Width="1.5" PointX="12" PointY="22.875" />
+        <EntityTypeShape EntityType="Model.Membership" Width="1.5" PointX="12.75" PointY="10" />
+        <EntityTypeShape EntityType="Model.MembershipVisit" Width="1.5" PointX="15" PointY="10.5" />
+        <EntityTypeShape EntityType="Model.Module" Width="1.5" PointX="5.25" PointY="4.375" />
+        <EntityTypeShape EntityType="Model.NewsSubscription" Width="1.5" PointX="0.75" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.Party" Width="1.5" PointX="7.5" PointY="9.75" />
+        <EntityTypeShape EntityType="Model.PartiesTypeLookup" Width="1.5" PointX="5.25" PointY="8.625" />
+        <EntityTypeShape EntityType="Model.Payment" Width="1.5" PointX="12" PointY="14.5" />
+        <EntityTypeShape EntityType="Model.ProgramConfiguration" Width="1.5" PointX="15.75" PointY="6.625" />
+        <EntityTypeShape EntityType="Model.ProgramPackage" Width="1.5" PointX="12.75" PointY="29.625" />
+        <EntityTypeShape EntityType="Model.Program" Width="1.5" PointX="10.5" PointY="3" />
+        <EntityTypeShape EntityType="Model.Role" Width="1.5" PointX="7.5" PointY="0.75" />
+        <EntityTypeShape EntityType="Model.State" Width="1.5" PointX="3" PointY="12.875" />
+        <EntityTypeShape EntityType="Model.StatusCategory" Width="1.5" PointX="12.75" PointY="2.875" />
+        <EntityTypeShape EntityType="Model.StatusLookup" Width="1.5" PointX="18" PointY="10.75" />
+        <EntityTypeShape EntityType="Model.UserPreference" Width="1.5" PointX="15" PointY="14.125" />
+        <EntityTypeShape EntityType="Model.User" Width="1.5" PointX="9.75" PointY="11" />
+        <AssociationConnector Association="Model.FK_Branches_Companies1" />
+        <AssociationConnector Association="Model.FK_BranchPolicy_Branches" />
+        <AssociationConnector Association="Model.FK_Items_Branches" />
+        <AssociationConnector Association="Model.FK_Parties_Branches" />
+        <AssociationConnector Association="Model.FK_ProgramConfigurations_Branches" />
+        <AssociationConnector Association="Model.FK_Users_Branches1" />
+        <AssociationConnector Association="Model.FK_CityMaster_StateMaster" />
+        <AssociationConnector Association="Model.FK_Parties_Cities" />
+        <AssociationConnector Association="Model.FK_Companies_Industries" />
+        <AssociationConnector Association="Model.FK_CompanyModules_Companies" />
+        <AssociationConnector Association="Model.FK_CompanyPreferences_Companies" />
+        <AssociationConnector Association="Model.FK_Divisions_Companies" />
+        <AssociationConnector Association="Model.FK_StatusLookup_Companies" />
+        <AssociationConnector Association="Model.FK_CompanyModules_Modules" />
+        <AssociationConnector Association="Model.FK_Parties_Countries" />
+        <AssociationConnector Association="Model.FK_StateMaster_CountryMaster" />
+        <AssociationConnector Association="Model.FK_UserPreferences_Currency" />
+        <AssociationConnector Association="Model.FK_Programs_Divisions" />
+        <AssociationConnector Association="Model.FK_Parties_GenderLookup" />
+        <AssociationConnector Association="Model.FK_InvoiceItems_Invoices" />
+        <AssociationConnector Association="Model.FK_InvoiceItems_Items" />
+        <AssociationConnector Association="Model.FK_InvoiceItems_Memberships" />
+        <AssociationConnector Association="Model.FK_Invoices_Parties" />
+        <AssociationConnector Association="Model.FK_Payments_Invoices" />
+        <AssociationConnector Association="Model.FK_UserPreferences_Languages" />
+        <AssociationConnector Association="Model.FK_Logging_Users" />
+        <AssociationConnector Association="Model.FK_Membership_Parties" />
+        <AssociationConnector Association="Model.FK_Membership_Programs" />
+        <AssociationConnector Association="Model.FK_MembershipVisits_Membership" />
+        <AssociationConnector Association="Model.FK_Roles_Modules" />
+        <AssociationConnector Association="Model.FK_Parties_PartiesTypeLookup" />
+        <AssociationConnector Association="Model.FK_Payments_Parties" />
+        <AssociationConnector Association="Model.FK_Users_Parties" />
+        <AssociationConnector Association="Model.FK_ProgramConfigurations_Programs" />
+        <AssociationConnector Association="Model.FK_ProgramPackages_Programs" />
+        <AssociationConnector Association="Model.FK_ProgramPackages_Programs1" />
+        <AssociationConnector Association="Model.FK_Status_Categories" />
+        <AssociationConnector Association="Model.FK_StatusCategories_StatusCategories" />
+        <AssociationConnector Association="Model.FK_UserPreferences_Users" />
+        <AssociationConnector Association="Model.UserRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
